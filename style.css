@@ -354,7 +354,7 @@ footer .foot i{
         width: 80%;
     }
     .text{
-        width: 70%;
+        width: 80%;
         padding-left: 4rem;
         text-align: center;
     }
@@ -382,12 +382,12 @@ footer .foot i{
         display: block;
     }
     footer{
-        width: 80%;
+        width: 100%;
     }
     .projects button{
         margin-left: 4rem;
     }
     .projects{
-        width: 85%;
+        width: 100%;
     }
 }
