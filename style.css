@@ -2,31 +2,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
 body{
-    background-color: #FCFCFC;
-    overflow-x: hidden;
+    background-color: darkgray;
 }
 .first{
     height: 100vh;
 }
 nav{
     display: flex;
+    background-color: #213b52;
     width: 100%;
+    margin: auto;
     height: auto;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-top: 30px;
     margin-bottom: 125px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     /* margin-left: 1.5rem; */
     /* margin-right: 1.5rem; */
 }
 nav .left{
     display: flex;
     gap: 15px;
+    color: #fff;
+}
+nav .left p{
+    font-size: 25px;
+}
+nav .left i{
+    font-size: 30px;
 }
 nav .right i{
     display: none;
+    z-index: 10;
+    color: #fff;
 }
 nav ul{
     display: flex;
@@ -35,16 +49,18 @@ nav ul{
     gap: 30px;
 }
 nav ul li a{
-    /* color: #fff; */
+    color: #fff;
     text-decoration: none;
     cursor: pointer;
 }
 .home{
     /* height: calc(100vh - 10.5rem); */
     /* gap: 4rem; */
-    padding: 0 2rem;
+    /* padding: 0 5rem; */
+    padding-top: 3rem;
     /* background-color: #0F9F6E; */
-    /* width: 100%; */
+    width: 80%;
+    margin: auto;
 }
 .home h1{
     display: block;
@@ -58,7 +74,8 @@ nav ul li a{
 }
 .home button{
     border: 1px solid;
-    padding: 6px 25px;
+    border: none;
+    padding: 10px 30px;
     border-radius: 100px;
     background-color: #213b52;
 }
@@ -72,6 +89,10 @@ section{
     display: flex;
     padding: 2rem 0 4rem;
     height: 80vh;
+    width: 80%;
+    margin: auto;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
 }
 section h2{
     text-align: center;
@@ -103,6 +124,7 @@ section h2{
 }
 .text button{
     border: 1px solid;
+    border: none;
     padding: 6px 25px;
     border-radius: 100px;
     background-color: #213b52;
@@ -111,11 +133,11 @@ section h2{
 /* MY SERVICES */
 .services{
     display: block;
-    height: 80vh;
-    border-top: 1px solid #f5f5f5;
+    height: 85vh;
+    /* border-top: 1px solid #f5f5f5; */
     /* border-bottom: 1px solid #f5f5f5; */
     text-align: center;
-    padding-top: 40px;
+    padding-top: 100px;
     /* padding-bottom: 50px; */
     /* padding-right: 15px; */
     /* padding-left: 15px; */
@@ -150,7 +172,8 @@ section h2{
     width: 100%;
     padding-top: 6rem;
     display: block;
-    height: 100vh;
+    /* height: 100vh; */
+    height: fit-content;
 }
 .projects .icon{
     display: flex;
@@ -181,10 +204,13 @@ section h2{
 }
 .projects .main{
     padding-bottom: 2rem;
-    border: 1px solid rgba(220, 226, 238, 0.71);
+    /* border: 1px solid rgba(220, 226, 238, 0.71); */
     box-sizing: border-box;
     border-radius: 10px;
     text-align: center;
+}
+.projects .main img{
+    width: 30%;
 }
 .projects .main h2{
     padding-bottom: 1rem;
@@ -197,7 +223,8 @@ section h2{
 }
 .projects button{
     border: 1px solid;
-    padding: 6px 25px;
+    border: none;
+    padding: 10px 30px;
     border-radius: 100px;
     margin-left: 40rem;
     margin-top: 1rem;
@@ -214,16 +241,18 @@ section h2{
     /* gap: 1.5rem; */
     /* row-gap: 3rem; */
     /* max-width: 80%; */
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
+    width: 80%;
+    margin: auto;
     display: flex;
-    gap: 25rem;
-    margin-right: 1.5rem;
+    gap: 20rem;
+    /* margin-right: 1.5rem; */
 }
 .contact{
     /* padding: 2rem 0 4rem; */
     /* display: block; */
     height: 90vh;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
     padding-right: 15px;
     padding-left: 15px;
@@ -252,7 +281,7 @@ section h2{
 }
 .contact .info{
     display: flex;
-    gap: 3rem;
+    /* gap: 3rem; */
     margin-bottom: 3rem;
 }
 .lefty .info i{
@@ -268,8 +297,8 @@ section h2{
 .lefty{
     position: relative;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
     padding-top: 22px;
 }
 .contact form{
@@ -278,20 +307,22 @@ section h2{
     /* padding-top: 2rem; */
     /* margin-top: 3rem; */
     display: flex;
-    flex-flow: column wrap;
-    width: 30%;
+    flex-flow: column;
+    width: 40%;
+    /* margin: auto; */
     /* justify-content: center; */
     /* align-items: center; */
     position: relative;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+    /* padding-right: 15px;
+    padding-left: 15px; */
     /* padding-top: 32px; */
 }
 .contact form input, 
 textarea{
     margin-bottom: 0.5rem;
-    /* width: 80%; */
+    /* width: 80%;
+    margin: auto; */
     padding: 15px;
     border-radius: 10px;
     border: 1px solid #999;
@@ -323,6 +354,20 @@ footer .foot i{
     text-decoration: none;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERIES */
 @media (max-width: 1000px){
     /* nav{
@@ -333,12 +378,47 @@ footer .foot i{
         /* transition: all 1s; */
         /* position: fixed;
     } */
+    nav{
+        display: block;
+    }
     nav ul{
         display: none;
     }
-    nav .right i{
+    nav #links{
+        z-index: 5;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 1;
+        background-color: white;
+        width: 50vw;
+        height: 45vh;
+        margin-top: 7rem;
+    }
+    nav #links ul{
         display: block;
-        font-size: 20px;
+        color: #525252;
+        width: 90%;
+        height: 25vh;
+        padding: 15px;
+        margin: 0;
+    }
+    nav #links ul li a{
+        display: block;
+        font-size: 18px;
+        margin-top: 1.5rem;
+    }
+    nav ul li a{
+        color: blue;
+    }
+    #menu{
+        display: block;
+        font-size: 35px;
+        margin-left: 17rem;
+    }
+    #close{
+        font-size: 35px;
+        margin-left: 17rem;
     }
     .home h1{
         font-size: 2em;
@@ -388,6 +468,9 @@ footer .foot i{
         margin-left: 4rem;
     }
     .projects{
+        width: 100%;
+    }
+    .contact form{
         width: 100%;
     }
 }
